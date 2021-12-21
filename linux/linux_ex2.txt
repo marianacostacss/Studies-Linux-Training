@@ -1,0 +1,126 @@
+Linux: Diretórios e Comandos Essenciais
+Exercícios de Revisão I
+
+1) Crie uma pasta de nome Exercícios e Acesse a mesma
+mkdir Exercícios  && cd Exercícios
+echo -e "---HARDWARE---\n"
+lshw | more
+
+
+2) Crie um arquivo vazio de nome lista_nomes.txt
+touch lista_nomes.txt
+
+3) Abra este arquivo com o Editor Nano
+nano lista_nomes.txt
+
+4) Digite 20 Nomes de Pessoas Conhecidas incluindo o seu, pulando de linha para cada nome inserido.
+nome1
+nome2
+nome3
+nome4
+...
+
+5) Salve o arquivo
+ctrl x
+
+6) Exiba os 10 primeiros Nomes da Lista
+head lista_nomes.txt
+
+7) Exiba os 10 ultimos Nomes da Lista
+tail lista_nomes.txr
+
+8) Procure no texto o seu nome
+grep nomex lista_nome.txt
+ou
+cat list_nome.txt | grep nomex
+
+9) Crie um Arquivo chamado setembro.txt com a saida do comando cal.
+call setembro 2020 > setembro.txt
+
+10) Adicione o conteúdo do arquivo setembro.txt ao arquivo lista_nomes.txt
+cat setembro.txt >> lits_nomes.txt
+
+11) Exiba o arquivo lista_nomes.txt com paginação
+less lista_nomes.txt
+
+12) Exiba o caminho do arquivos setembro.txt
+find ~ -name setembro.txt
+
+13) Exiba o tipo do arquivo lista_nomes.txt
+file lista_nomes.txt
+
+14) Exiba a explicação do comando ls
+whatis ls
+
+15) Renomeie o Arquivo lista_nomes.txt para arquivo.txt
+mv lita_nome.txt arquivo.txt
+
+16) Limpe o Terminal
+clear
+
+17) Remover todos os arquivos da pasta
+rm -r*
+
+18) Saia do Terminal
+ctrl d
+
+Exercícios de Revisão II
+1) Exibir todos os hardwares que existem na áquina com paginação
+echo -e "---HARDWARE---\n" > minhamaquina.txt
+lshw | more
+
+2) Salve a saída do comando anterior no arquivo minhamaquina.txt
+lshw >> minhamaquina.txt
+
+3) Exiba informações sobre a memória física e virtual na máquina
+free
+
+4) Adicione a saída do comando anterior ao arquivo minhamaquina.txt
+echo -e "\n---MEMÓRIA---\n" >> minhamaquina.txt
+free >> minhamaquina.txt
+5) Exiba todas as placas PCI conectadas
+lspci
+
+6) Adicione a saída do comando anterior ao arquivo minhamaquina.txt
+echo -e "\n---PCI---\n" >> minhamaquina.txt
+lspci >> minhamaquina.txt
+
+7) Exiba todos os dispositivos usb conectados
+lsusb
+
+8) Adicione a saída do comando anterior ao arquivo minhamaquina.txt
+echo -e "\n---USB---\n" >> minhamaquina.txt
+lsusb >> minhamaquina.txt
+
+9) Exiba as informações sobre processador
+lscpu
+
+10) Adicione a saída do comando anterior ao arquivo minhamaquina.txt
+echo -e "\n---CPU---\n" >> minhamaquina.txt
+lscpu>> minhamaquina.txt
+
+11) Exiba o nome do Kernel
+uname
+
+12) Adicione a saída do comando aterior ao arquivo minhamaquina.txt
+echo -e "\n---NOME DO KERNEL---\n" >> minhamaquina.txt
+uname >> minhamaquina.txt
+
+13) Exiba a versão do kernael
+name -r
+
+14) Adicione a saída do comando anterior ao arquivo minhamaquina.txt
+echo -e "\n---VERSÃO DO KERNEL---\n" >> minhamaquina.txt
+name -r >> minhamaquina.txt
+
+15) Exiba a arquitetura do kernel
+arch
+ou 
+uname-m
+
+16) Reinicie a máquina
+reboot
+
+
+
+
